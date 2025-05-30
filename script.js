@@ -116,7 +116,7 @@ let personas = [
   { nombre: "elvira", apellido: "huyke" },
 ];
 
-const filtropersonas = personas.filter((x) => x.apellido == "huyke");
+const filtropersonas = personas.filter((x) => x.apellido == "remolina");
 console.log(filtropersonas);
 
 let a = "";
@@ -185,7 +185,7 @@ let meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'ag
 const date = new Date();
 
 let res = date.getDate() + ' ' + meses[date.getMonth()] + ' ' + date.getFullYear();
-  console.log(res);
+console.log(res);
 
 date.getUTCDate();
 console.log(date);
@@ -198,7 +198,40 @@ document.getElementById("fechas").innerHTML = date;
 console.log(Math.PI)
 
 let numero = 5.74
+
 console.log(Math.round(numero).toPrecision(3));
 console.log(Math.fround(numero).toPrecision(3));
 
-document.getElementById("math").innerHTML = Math.round(numero).toPrecision(3);
+let redondear = "<p> redondear => " + Math.round(numero).toPrecision(3) + "</p>";
+
+document.getElementById("math").innerHTML = redondear
+
+
+///////////////////// condicionales /////////////////////////
+
+let edad = Math.round((Math.random()) * 100);
+console.log(edad)
+
+if (edad > 60) {
+  console.log('no')
+} else {
+  if (edad < 18) {
+    console.log('no')
+  } else {
+    console.log('si')
+  }
+}
+
+let estilo = 'cumbia'
+
+switch (estilo) {
+  case 'pop':
+    console.log('bruno mars')
+    break;
+  case 'rock':
+    console.log('metallica')
+    break;
+  default:
+    console.log('no existe')
+    break;
+}
