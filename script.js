@@ -235,3 +235,46 @@ switch (estilo) {
     console.log('no existe')
     break;
 }
+
+/////////////// bucles  for ///////////////
+
+let dias = ['lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
+
+let bucle = document.getElementById("bucle")
+let texto = ''
+
+for (let index = 0; index < dias.length; index++) {
+  texto += dias[index];
+
+  if (index < dias.length - 1) {
+    texto += ', '
+  }
+  bucle.textContent = texto
+  // console.log(element);
+}
+
+let bucle2 = document.getElementById("bucle2")
+let texto2 = ''
+
+for (const dia of dias) {
+  texto2 += dia;
+
+  if (dia != dias[dias.length - 1]) {
+    texto2 += ', '
+  }
+  bucle2.textContent = texto2
+  // console.log(element);
+}
+
+for (const clave in personas) {
+  console.log(personas[clave])
+
+}
+
+cursos.forEach(element => {
+  console.log(element);
+  
+});
+
+
+/////////////// bucles  while ///////////////
