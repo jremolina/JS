@@ -278,3 +278,25 @@ cursos.forEach(element => {
 
 
 /////////////// bucles  while ///////////////
+
+let edad2 = 8;
+
+while (edad2 < 18) {
+  console.log('menor de edad')
+  edad2++  
+}
+console.log('mayor de edad')
+
+
+/////////////////////// sets y maps /////////////////////
+
+let empleados = new Set(['Juan', 'Pedro', 'Maria', 'Ana', 'Luis', 'Carlos', 'Pedro', 'Carlos'])
+console.log(empleados)
+empleados.add('Jhonny')
+console.log(empleados)
+empleados.delete('Maria')
+console.log(empleados)
+let consulta = empleados.has('Jhonny')
+console.log(consulta);
+consulta = empleados.size
+console.log(consulta);
