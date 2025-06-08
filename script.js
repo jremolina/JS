@@ -300,3 +300,6 @@ let consulta = empleados.has('Jhonny')
 console.log(consulta);
 consulta = empleados.size
 console.log(consulta);
+
+consulta = empleados.values()
+console.log(consulta);
